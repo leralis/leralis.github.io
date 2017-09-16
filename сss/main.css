@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1300px;
+}
+
+.main {
+	color: lime;
+	font-size: 20px;
+	font-weight: bold;
+}
