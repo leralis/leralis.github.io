@@ -17,6 +17,10 @@ img {
 	  height: auto;
 }
 
+.container {
+	width: 1000px;
+}
+
 .wrap-title {
 	margin-bottom: 50px;
 }
@@ -24,7 +28,7 @@ img {
 .title {
 	margin-bottom: 50px;
 	margin-top: 50px;
-	background-color: #CB0D0B;
+	background-color: #0F5EF5;
 	color: white;
 	font-size: 36px;
 	text-align: center;
@@ -34,12 +38,6 @@ img {
 	box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75)
 }
 
-.undertitle {
-	color: red;
-	text-align: center;
-	font-size: 40px;
-	font-weight: bold;
-}
 
 nav {
 	font-family: 'Alegreya Sans', sans-serif;
@@ -62,7 +60,7 @@ nav {
 .ad-menu li {
 	border: 1px solid black;
   display: inline-block;
-  background: #CB0D0B;
+  background: #217DDE;
   font-size: 1.4em;
   text-align: center;
   width: 19%;
@@ -85,7 +83,6 @@ nav {
 
 .active {
 	font-weight: bold;
-	color: red;
 }
 
 @media screen and (max-width: 920px) {
@@ -160,7 +157,7 @@ nav {
 .info {
 	margin-top: 160px;
 	font-family: 'Alegreya Sans', sans-serif;
-	color: red;
+	color: #217DDE;
 	text-align: center;
 	background-color: white;
 	opacity: 0.8;
@@ -231,7 +228,7 @@ nav {
 	width: 100%;
 	border: 1px solid black;
 	border-radius: 6px;
-	background-color: #333333;
+	background-color: #217DDE;
 	margin-top: 5px;
 	text-decoration: none;
 	padding: 5px;
@@ -242,8 +239,8 @@ nav {
 
 .link a:hover {
 	text-decoration: none;
-	background-color: silver;
-	color:#C80000;
+	background-color: #4097F2;
+	color:black;
 }
 
 
@@ -331,7 +328,7 @@ margin-bottom: 20px;
 
 
 .linkpro {
-	background-color: #CB0D0B;
+	background-color: #4097F2;
 	font-size: 20px;
 	border: 1px solid black;
 	padding: 15px;
@@ -352,7 +349,7 @@ margin-bottom: 20px;
 }
 
 .color {
-	background-color: whitesmoke;
+	background-color:#E2EDF8;
 }
 
 .card-numbers {
@@ -397,7 +394,7 @@ margin-bottom: 20px;
 }
 
 .wrap {
-	background-color: #CB0D0B;
+	background-color: #4097F2;
 	padding: 30px;
 }
 
@@ -422,7 +419,7 @@ margin-bottom: 20px;
 }
 
 .footer-bottom	{
-	background-color: #AD0505;
+	background-color: #217DDE;
 	color: white;
 	text-align: center;
 	font-size: 25px;
@@ -435,4 +432,9 @@ margin-bottom: 20px;
 	color: black;
 	font-family: 'Alegreya Sans', sans-serif;
 }
+
+
+
+
+
 
