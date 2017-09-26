@@ -50,8 +50,9 @@ img {
 }
 
 .links {
+	margin-top: 15px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .links > a {
@@ -141,4 +142,16 @@ img {
 .registration a:hover {
 	text-decoration: none;
 	color: red;
+}
+
+.image {
+	width: 70%;
+  	margin: 0 auto;
+}
+
+.image > img {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width: 100%; 
+ 	height: auto; 
 }
