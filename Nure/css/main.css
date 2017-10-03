@@ -429,6 +429,7 @@ margin-bottom: 20px;
 .academy-list > ul > li {
 	padding: 10px;
 	vertical-align: top;
+	margin: 0 auto;
 }
 
 .academy-image {
