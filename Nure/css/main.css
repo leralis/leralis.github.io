@@ -174,6 +174,9 @@ nav {
 
 .card-section {
 	font-family: 'Alegreya Sans', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
 }
 
 .all-cards {
@@ -182,7 +185,6 @@ nav {
 	flex-wrap: wrap;
 	flex-grow: 1;
 	justify-content: space-between;
-
 }
 
 .article-card {
@@ -224,6 +226,7 @@ nav {
 
 
 .link a {
+	text-align: center;
 	display: block;
 	width: 100%;
 	border: 1px solid black;
@@ -251,10 +254,6 @@ nav {
 	color: #CB0D0B;
 	}
 
-.links {
-	max-width: 270px;
-	color:yellow;
-}
 
 
 a {
@@ -281,7 +280,9 @@ a .link {
 /* ~~~~~~~~~~~~~~~~ Программы обучения ~~~~~~~~~~~~~ */
 .prog {
 	text-align: center;
+
 }
+
 .wraper-prog {
 	font-family: 'Alegreya Sans', sans-serif;
 	color: black;
@@ -326,27 +327,6 @@ margin-bottom: 20px;
 	font-size: 18px;
 }
 
-
-.linkpro {
-	background-color: #4097F2;
-	font-size: 20px;
-	border: 1px solid black;
-	padding: 15px;
-	width: 100%;
-	border-radius: 6px;
-	padding: -5px;
-}
-
-.linkpro a {
-	display: block;
-	color: white;
-}
-
-.linkpro a:hover {
-	text-decoration: none;
-	color:black;
-	font-weight: bold;
-}
 
 .color {
 	background-color:#E2EDF8;
@@ -435,30 +415,104 @@ margin-bottom: 20px;
 
 
 
-.logo-wrap {
-	margin: 10px;
-	text-align: center;
+
+.white {
+	background-color: white;
+}
+.academy-list > ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+}
+
+.academy-list > ul > li {
+	padding: 10px;
+	vertical-align: top;
+}
+
+.academy-image {
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	width: 350px;
+	height: 200px;
 }
 
-.logo {
-
-}
-
-.logo-info {
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-bottom: 10px;
-	font-size: 18px;
-	text-align: justify;
-	color: black;
+.academy-card {
+	width: 360px;
 	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 18px;
+	color: black;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-.bigger > img {
-	width: 75%;
+.academy-info {
+	color: black;
 }
+
+.bigger img {
+	width: 250px;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+
+
+ПУСТАЯ СТРАНИЦА 
+
+.centered {
+	text-align: center;
+}
+
+
+.main {
+	padding-top: 80px;
+	font-family: 'Alegreya Sans', sans-serif;;
+}
+
+.aboutCourse {
+	text-align: justify;
+	background-color: white;
+	color: black;
+	font-size: 20px;
+}
+
+.aboutCourse h4 {
+	text-align: center;
+	color: #CB0D0B;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.aboutCourse li {
+}
+
+.minus {
+	margin-top: 0px;
+}
+
+.another {
+	display: flex;
+	align-items: center;
+	width: 60%;
+	margin: 30px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.image {
+	text-align: center; 
+	margin-bottom: 20px;
+}
+
+
 
 
 
