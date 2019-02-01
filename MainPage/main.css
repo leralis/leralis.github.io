@@ -1,0 +1,96 @@
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    z-index: -1;
+  }
+  
+  canvas {
+    margin: auto;
+  }
+  
+  body {
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header {
+    background: rgba(255,255,255, 0.8);
+  }
+
+ .header__logo {
+    font-size: 2em;
+    font-weight: 400;
+ }
+
+ .header__link {
+    text-decoration: none;
+    color: black;
+ }
+
+ .main {
+    text-align: center;
+ }
+
+ .main_position {
+    margin: 150px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+ }
+
+ .main-wrapper {
+    background: rgba(255,255,255, 0.85);
+    padding: 30px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 8px;
+ }
+
+ .main__title{
+    font-size: 2em;
+    font-weight: 500;
+ }
+
+ .main__description{
+    font-size: 1.1em;
+ }
+
+ .main__input {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+ }
+
+ .main__input-session-name {
+    margin: 0 auto;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    border-radius: 3px;
+    border: 1px solid #D3D3D3;
+ }
+
+ .button-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color:  #4682B4;
+    border-radius: 3px;
+    
+
+ }
+
+
