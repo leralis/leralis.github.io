@@ -83,14 +83,19 @@
     border: 1px solid #D3D3D3;
  }
 
+ .main__label-session-name {
+    margin-bottom: 10px;
+ }
+
  .button-link {
     text-decoration: none;
     color: white;
     padding: 10px 20px;
     background-color:  #4682B4;
     border-radius: 3px;
-    
-
+   
  }
+
+
 
 
