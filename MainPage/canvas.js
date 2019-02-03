@@ -1,6 +1,6 @@
 "use strict";
 
-const DISTANCE_BETWEEN_VERTICES = 200;
+const DISTANCE_BETWEEN_VERTICES = 500; 
 
 class Point {
   constructor(opts) {
@@ -8,13 +8,21 @@ class Point {
     this.x = x;
     this.y = y;
     this.angle = angle;
-    this.velocity = velocity;
+    this.velocity = velocity; 
   }
 
   move() {
     this.x = this.x + Math.cos(this.angle) * this.velocity;
     this.y = this.y + Math.sin(this.angle) * this.velocity;
   }
+
+  getNextCoordinates(){
+      this.nextX = this.x + Math.sin(this.angle) * this.velocity;
+      this.nextY = this.y + Math.cos(this.angle) * this.velocity;
+      this.nextCoordinates = {x: this.nextX, y: this.nextY}
+      return this.nextCoordinates;
+  }
+
 }
 
 class Graph {
@@ -65,6 +73,17 @@ class Graph {
   move() {
     this.points.forEach(point => point.move());
     this.calculateConnections();
+    this.points.forEach(point => {
+      let nextCoords = point.getNextCoordinates();
+      if (nextCoords.x >= canvas.width || nextCoords.x < 0) {
+        point.velocity = -(point.velocity)
+      }
+      if (nextCoords.y >= canvas.height || nextCoords.y < 0) {
+        point.velocity = -(point.velocity)
+      }
+      nextCoords.x  += point.velocity;
+      nextCoords.y  += point.velocity;
+    })
   }
 
   calculateConnections() {
@@ -103,22 +122,35 @@ class Demo {
     this.canvas = document.getElementById(id);
     this.ctx = this.canvas.getContext('2d');
     this.drawer = new Drawer(this.ctx);
-
-    this.setupHandlers();
+    this.setupEmergenceArea();
+    
   }
 
-  setupHandlers() {
-    this.canvas.onmousemove = (e) => {
-      let x = e.layerX;
-      let y = e.layerY;
-      let velocity = Math.random() + 0.6;
-      let angle = Math.random() * (Math.PI * 2);
-
-      let options = { x, y, velocity, angle };
-      let point = new Point(options);
-      this.graph.addPoint(point);
-    };
+  random(min,max) {
+    return Math.floor(Math.random()*(max-min)) + min;
+    
   }
+
+  setupEmergenceArea(){
+    for (let i = 0; i<5; i++){
+      this.region = [];
+      this.region.x = this.random(100, this.canvas.width-100);
+      this.region.y = this.random(100, this.canvas.height-100);
+      let quantity = this.random(5, 10);
+      
+      for ( let i = 0; i<quantity; i++){
+        let x = this.random(this.region.x-100, this.region.x+100);
+        let y = this.random(this.region.y-100, this.region.y+100);
+        let velocity = Math.random() + 0.3;
+        let angle = Math.random() * (Math.PI * 2);
+        let options = { x, y, velocity, angle };
+        let point = new Point(options);
+        this.graph.addPoint(point);
+      }
+  }
+}
+  
+
 
   clear() {
     let ctx = this.ctx;
