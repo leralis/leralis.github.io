@@ -1,6 +1,6 @@
 "use strict";
 
-const DISTANCE_BETWEEN_VERTICES = 500; 
+const DISTANCE_BETWEEN_VERTICES = 200; 
 
 class Point {
   constructor(opts) {
@@ -137,7 +137,7 @@ class Demo {
       this.region.x = this.random(100, this.canvas.width-100);
       this.region.y = this.random(100, this.canvas.height-100);
       let quantity = this.random(5, 10);
-      
+
       for ( let i = 0; i<quantity; i++){
         let x = this.random(this.region.x-100, this.region.x+100);
         let y = this.random(this.region.y-100, this.region.y+100);
